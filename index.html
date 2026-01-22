@@ -213,10 +213,21 @@
 
     <section class="py-24 px-6 bg-white">
         <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-20">
+            
             <div class="relative order-2 md:order-1">
                 <div class="absolute -top-6 -left-6 w-32 h-32 bg-tricoGold/10 rounded-full z-0"></div>
                 <img id="img-quemsomos" src="" loading="lazy" class="relative z-10 w-full rounded-sm shadow-2xl grayscale hover:grayscale-0 transition duration-700 object-cover h-[500px]" alt="Equipe TricoMaster">
+                
+                <div class="mt-6 md:hidden text-center relative z-10 px-2">
+                    <p class="text-tricoDark font-serif italic text-lg leading-relaxed">
+                        "Nossa missão é simples e poderosa: Devolver confiança, imagem e autoestima por meio de um cuidado capilar de alto nível."
+                    </p>
+                    <p class="text-tricoGold font-bold text-xs mt-3 uppercase tracking-wider">
+                        Dra. Luciane Pisanelli
+                    </p>
+                </div>
             </div>
+
             <div class="order-1 md:order-2">
                 <h2 class="text-sm text-tricoGold font-bold uppercase tracking-widest mb-2">Quem Somos</h2>
                 <h3 class="text-4xl font-serif text-tricoDark mb-6">Referência em Medicina Capilar Para Quem Exige o Melhor</h3>
@@ -224,7 +235,8 @@
                     <p>A <strong>TricoMaster</strong> nasceu com um propósito: elevar o padrão do tratamento capilar no Brasil. Fugimos das promessas milagrosas para entregar medicina baseada em evidência.</p>
                     <p>Somos uma clínica médica especializada em saúde e recuperação capilar, criada para pessoas que buscam <strong>resultados reais, segurança e excelência</strong>.</p>
                     <p>Há mais de <strong>10 anos</strong>, já cuidamos de <strong>mais de 9.000 pacientes</strong>, oferecendo um modelo de atendimento baseado em diagnóstico médico preciso, personalização e acompanhamento contínuo — sem soluções genéricas ou promessas vazias.</p>
-                    <p class="pt-2 font-medium text-tricoDark border-l-4 border-tricoGold pl-4">
+                    
+                    <p class="pt-2 font-medium text-tricoDark border-l-4 border-tricoGold pl-4 hidden md:block">
                         Nossa missão é simples e poderosa: <br>
                         <span class="italic">Devolver confiança, imagem e autoestima por meio de um cuidado capilar de alto nível.</span>
                     </p>
@@ -256,12 +268,13 @@
         </div>
         
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
             <div onclick="abrirModalTratamento(1)" class="group relative h-80 rounded-sm overflow-hidden cursor-pointer shadow-lg transform transition hover:-translate-y-1"
                  data-title="Calvície Masculina"
                  data-description="A Alopecia Androgenética Masculina é a principal causa de calvície. Nosso protocolo combina inibidores enzimáticos tópicos, laserterapia de baixa fluência e microinfusão de medicamentos (MMP) para bloquear a ação do DHT e estimular novos fios.">
                 <div id="trat-1" class="absolute inset-0 bg-cover bg-center transition duration-700 group-hover:scale-110"></div>
                 <div class="absolute inset-0 bg-gradient-to-t from-tricoDark/90 via-tricoDark/40 to-transparent opacity-90 transition duration-300 group-hover:opacity-80"></div>
-                <div class="absolute bottom-0 left-0 p-8 w-full border-b-4 border-transparent group-hover:border-tricoGold transition-all duration-300">
+                <div class="absolute bottom-0 left-0 p-8 w-full border-b-4 border-transparent group-hover:border-tricoGold transition-all duration-300 text-center">
                     <h4 class="text-xl font-serif font-bold text-white mb-2">Calvície Masculina</h4>
                     <p class="text-stone-300 text-sm">Ver detalhes +</p>
                 </div>
@@ -272,7 +285,7 @@
                  data-description="A calvície feminina exige uma abordagem hormonal delicada. Utilizamos protocolos de bioestimulação capilar e terapia regenerativa para devolver o volume e a densidade, sem efeitos colaterais sistêmicos indesejados.">
                 <div id="trat-2" class="absolute inset-0 bg-cover bg-center transition duration-700 group-hover:scale-110"></div>
                 <div class="absolute inset-0 bg-gradient-to-t from-tricoDark/90 via-tricoDark/40 to-transparent opacity-90 transition duration-300 group-hover:opacity-80"></div>
-                <div class="absolute bottom-0 left-0 p-8 w-full border-b-4 border-transparent group-hover:border-tricoGold transition-all duration-300">
+                <div class="absolute bottom-0 left-0 p-8 w-full border-b-4 border-transparent group-hover:border-tricoGold transition-all duration-300 text-center">
                     <h4 class="text-xl font-serif font-bold text-white mb-2">Calvície Feminina</h4>
                     <p class="text-stone-300 text-sm">Ver detalhes +</p>
                 </div>
@@ -283,7 +296,7 @@
                  data-description="Para quedas agudas (Pós-Covid, Pós-Parto, Estresse), focamos na interrupção imediata da queda com um 'pool' de vitaminas injetáveis e fotobiomodulação para acelerar a fase de crescimento (anágena).">
                 <div id="trat-3" class="absolute inset-0 bg-cover bg-center transition duration-700 group-hover:scale-110"></div>
                 <div class="absolute inset-0 bg-gradient-to-t from-tricoDark/90 via-tricoDark/40 to-transparent opacity-90 transition duration-300 group-hover:opacity-80"></div>
-                <div class="absolute bottom-0 left-0 p-8 w-full border-b-4 border-transparent group-hover:border-tricoGold transition-all duration-300">
+                <div class="absolute bottom-0 left-0 p-8 w-full border-b-4 border-transparent group-hover:border-tricoGold transition-all duration-300 text-center">
                     <h4 class="text-xl font-serif font-bold text-white mb-2">Eflúvios (Queda)</h4>
                     <p class="text-stone-300 text-sm">Ver detalhes +</p>
                 </div>
@@ -294,53 +307,51 @@
                  data-description="Doença autoimune que causa falhas circulares. Tratamos com imunomoduladores locais e corticoides intralesionais de alta precisão para parar o ataque do sistema imune ao folículo.">
                 <div id="trat-4" class="absolute inset-0 bg-cover bg-center transition duration-700 group-hover:scale-110"></div>
                 <div class="absolute inset-0 bg-gradient-to-t from-tricoDark/90 via-tricoDark/40 to-transparent opacity-90 transition duration-300 group-hover:opacity-80"></div>
-                <div class="absolute bottom-0 left-0 p-8 w-full border-b-4 border-transparent group-hover:border-tricoGold transition-all duration-300">
+                <div class="absolute bottom-0 left-0 p-8 w-full border-b-4 border-transparent group-hover:border-tricoGold transition-all duration-300 text-center">
                     <h4 class="text-xl font-serif font-bold text-white mb-2">Alopecia Areata</h4>
                     <p class="text-stone-300 text-sm">Ver detalhes +</p>
                 </div>
             </div>
 
             <div onclick="abrirModalTratamento(5)" class="group relative h-80 rounded-sm overflow-hidden cursor-pointer shadow-lg transform transition hover:-translate-y-1"
-                 data-title="Areatas Cicatriciais (Fibrosante)"
+                 data-title="Fibrosante"
                  data-description="A Alopecia Frontal Fibrosante requer diagnóstico precoce para evitar cicatrizes permanentes. O foco é desinflamar a linha frontal e preservar os fios existentes.">
                 <div id="trat-5" class="absolute inset-0 bg-cover bg-center transition duration-700 group-hover:scale-110"></div>
                 <div class="absolute inset-0 bg-gradient-to-t from-tricoDark/90 via-tricoDark/40 to-transparent opacity-90 transition duration-300 group-hover:opacity-80"></div>
-                <div class="absolute bottom-0 left-0 p-8 w-full border-b-4 border-transparent group-hover:border-tricoGold transition-all duration-300">
-                    <h4 class="text-xl font-serif font-bold text-white mb-2">Areatas Cicatriciais (Fibrosante)</h4>
+                <div class="absolute bottom-0 left-0 p-8 w-full border-b-4 border-transparent group-hover:border-tricoGold transition-all duration-300 text-center">
+                    <h4 class="text-xl font-serif font-bold text-white mb-2">Fibrosante</h4>
                     <p class="text-stone-300 text-sm">Ver detalhes +</p>
                 </div>
             </div>
 
             <div onclick="abrirModalTratamento(6)" class="group relative h-80 rounded-sm overflow-hidden cursor-pointer shadow-lg transform transition hover:-translate-y-1"
-                 data-title="Dermatitese e Psoríases"
+                 data-title="Dermatites"
                  data-description="Tratamento focado na saúde do couro cabeludo: controle de oleosidade excessiva, caspa (dermatite seborreica) e foliculites, preparando o terreno para o crescimento saudável.">
                 <div id="trat-6" class="absolute inset-0 bg-cover bg-center transition duration-700 group-hover:scale-110"></div>
                 <div class="absolute inset-0 bg-gradient-to-t from-tricoDark/90 via-tricoDark/40 to-transparent opacity-90 transition duration-300 group-hover:opacity-80"></div>
-                <div class="absolute bottom-0 left-0 p-8 w-full border-b-4 border-transparent group-hover:border-tricoGold transition-all duration-300">
-                    <h4 class="text-xl font-serif font-bold text-white mb-2">Dermatitese e Psoríases</h4>
+                <div class="absolute bottom-0 left-0 p-8 w-full border-b-4 border-transparent group-hover:border-tricoGold transition-all duration-300 text-center">
+                    <h4 class="text-xl font-serif font-bold text-white mb-2">Dermatites</h4>
                     <p class="text-stone-300 text-sm">Ver detalhes +</p>
                 </div>
             </div>
 
             <div onclick="abrirModalTratamento(7)" class="group relative h-80 rounded-sm overflow-hidden cursor-pointer shadow-lg transform transition hover:-translate-y-1"
-                 data-title="Protocolos Infantis e Adolecentes"
-                 data-description="A Tricomaster é referência no cuidado capilar infantil, com protocolos médicos desenvolvidos especialmente para crianças e adolescentes.
-Atuamos com diagnóstico preciso, abordagem segura e acompanhamento especializado.
-Cada protocolo é individualizado, respeitando a fase de crescimento, a saúde e o bem-estar dos pequenos pacientes.">
+                 data-title="Mesoterapia Capilar"
+                 data-description="Mesoterapia Capilar: Aplicação direta de nutrientes e fatores de crescimento no bulbo capilar, garantindo 100% de absorção onde o cabelo realmente nasce.">
                 <div id="trat-7" class="absolute inset-0 bg-cover bg-center transition duration-700 group-hover:scale-110"></div>
                 <div class="absolute inset-0 bg-gradient-to-t from-tricoDark/90 via-tricoDark/40 to-transparent opacity-90 transition duration-300 group-hover:opacity-80"></div>
-                <div class="absolute bottom-0 left-0 p-8 w-full border-b-4 border-transparent group-hover:border-tricoGold transition-all duration-300">
-                    <h4 class="text-xl font-serif font-bold text-white mb-2">Protocolos Infantis e Adolecentes</h4>
+                <div class="absolute bottom-0 left-0 p-8 w-full border-b-4 border-transparent group-hover:border-tricoGold transition-all duration-300 text-center">
+                    <h4 class="text-xl font-serif font-bold text-white mb-2">Mesoterapia Capilar</h4>
                     <p class="text-stone-300 text-sm">Ver detalhes +</p>
                 </div>
             </div>
 
             <div onclick="abrirModalTratamento(8)" class="group relative h-80 rounded-sm overflow-hidden cursor-pointer shadow-lg transform transition hover:-translate-y-1"
                  data-title="Transplante Capilar"
-                 data-description="Transplante Capilar FUE: Técnica fio a fio, sem cicatriz linear.<br>Ideal para cobrir entradas e coroa com máxima naturalidade e recuperação rápida.">
+                 data-description="Transplante Capilar<br><br>Transplante Capilar FUE: Técnica fio a fio, sem cicatriz linear. Ideal para cobrir entradas e coroa com máxima naturalidade e recuperação rápida.">
                 <div id="trat-8" class="absolute inset-0 bg-cover bg-center transition duration-700 group-hover:scale-110"></div>
                 <div class="absolute inset-0 bg-gradient-to-t from-tricoDark/90 via-tricoDark/40 to-transparent opacity-90 transition duration-300 group-hover:opacity-80"></div>
-                <div class="absolute bottom-0 left-0 p-8 w-full border-b-4 border-transparent group-hover:border-tricoGold transition-all duration-300">
+                <div class="absolute bottom-0 left-0 p-8 w-full border-b-4 border-transparent group-hover:border-tricoGold transition-all duration-300 text-center">
                     <h4 class="text-xl font-serif font-bold text-white mb-2">Transplante Capilar</h4>
                     <p class="text-stone-300 text-sm">Ver detalhes +</p>
                 </div>
@@ -348,10 +359,10 @@ Cada protocolo é individualizado, respeitando a fase de crescimento, a saúde e
 
             <div onclick="abrirModalTratamento(9)" class="group relative h-80 rounded-sm overflow-hidden cursor-pointer shadow-lg transform transition hover:-translate-y-1"
                  data-title="Biópsia Capilar"
-                 data-description="A Biópsia Capilar é a análise microscópica decisiva que vai além do exame visual para identificar ou confirmar a causa exata da queda e reafirmar o diagnóstico.">
+                 data-description="A Biópsia Capilar é a análise microscópica decisiva que vai além do exame visual para descobrir a causa exata da queda e reafirmar o diagnóstico.">
                 <div id="trat-9" class="absolute inset-0 bg-cover bg-center transition duration-700 group-hover:scale-110"></div>
                 <div class="absolute inset-0 bg-gradient-to-t from-tricoDark/90 via-tricoDark/40 to-transparent opacity-90 transition duration-300 group-hover:opacity-80"></div>
-                <div class="absolute bottom-0 left-0 p-8 w-full border-b-4 border-transparent group-hover:border-tricoGold transition-all duration-300">
+                <div class="absolute bottom-0 left-0 p-8 w-full border-b-4 border-transparent group-hover:border-tricoGold transition-all duration-300 text-center">
                     <h4 class="text-xl font-serif font-bold text-white mb-2">Biópsia Capilar</h4>
                     <p class="text-stone-300 text-sm">Ver detalhes +</p>
                 </div>
@@ -373,9 +384,8 @@ Cada protocolo é individualizado, respeitando a fase de crescimento, a saúde e
                 <div onclick="abrirModalProtocolo(this)" 
                      data-id="1"
                      data-title="1. Diagnóstico" 
-                     data-desc="O diagnóstico na Tricomaster começa com uma anamnese médica completa, aliada a exames laboratoriais e à Tricoscopia Digital de alta precisão.
-Com essa avaliação integrada, definimos um diagnóstico seguro e a estratégia ideal de tratamento."
-                     class="bg-white/5 border border-white/10 p-8 rounded-sm hover:border-tricoGold/50 transition duration-300 group cursor-pointer hover:bg-white/10">
+                     data-desc="Tudo começa com a Tricoscopia Digital de alta potência. Mapeamos a densidade, calibre dos fios e saúde do couro cabeludo para definir a estratégia exata."
+                     class="flex flex-col items-center text-center bg-white/5 border border-white/10 p-8 rounded-sm hover:border-tricoGold/50 transition duration-300 group cursor-pointer hover:bg-white/10">
                     <div class="text-4xl text-tricoGold mb-4 group-hover:scale-110 transition"><i class="ph ph-stethoscope"></i></div>
                     <h4 class="text-xl font-serif mb-2">1. Diagnóstico</h4>
                     <p class="text-xs text-tricoGold uppercase tracking-wide">Ver detalhes +</p>
@@ -385,7 +395,7 @@ Com essa avaliação integrada, definimos um diagnóstico seguro e a estratégia
                      data-id="2"
                      data-title="2. Fase Purificação" 
                      data-desc="Preparamos o 'terreno'. Realizamos um detox capilar profundo para remover obstruções, oleosidade e inflamações que impedem a oxigenação dos folículos."
-                     class="bg-white/5 border border-white/10 p-8 rounded-sm hover:border-tricoGold/50 transition duration-300 group cursor-pointer hover:bg-white/10">
+                     class="flex flex-col items-center text-center bg-white/5 border border-white/10 p-8 rounded-sm hover:border-tricoGold/50 transition duration-300 group cursor-pointer hover:bg-white/10">
                     <div class="text-4xl text-tricoGold mb-4 group-hover:scale-110 transition"><i class="ph ph-syringe"></i></div>
                     <h4 class="text-xl font-serif mb-2">2. Fase Purificação</h4>
                     <p class="text-xs text-tricoGold uppercase tracking-wide">Ver detalhes +</p>
@@ -395,7 +405,7 @@ Com essa avaliação integrada, definimos um diagnóstico seguro e a estratégia
                      data-id="3"
                      data-title="3. Fase Revitalização" 
                      data-desc="A fase ativa. Injeção de fatores de crescimento, laserterapia e medicamentos diretamente na raiz para forçar o nascimento de novos fios e engrossar os existentes."
-                     class="bg-white/5 border border-white/10 p-8 rounded-sm hover:border-tricoGold/50 transition duration-300 group cursor-pointer hover:bg-white/10">
+                     class="flex flex-col items-center text-center bg-white/5 border border-white/10 p-8 rounded-sm hover:border-tricoGold/50 transition duration-300 group cursor-pointer hover:bg-white/10">
                     <div class="text-4xl text-tricoGold mb-4 group-hover:scale-110 transition"><i class="ph ph-recycle"></i></div>
                     <h4 class="text-xl font-serif mb-2">3. Fase Revitalização</h4>
                     <p class="text-xs text-tricoGold uppercase tracking-wide">Ver detalhes +</p>
@@ -405,34 +415,10 @@ Com essa avaliação integrada, definimos um diagnóstico seguro e a estratégia
                      data-id="4"
                      data-title="4. Fase Controle" 
                      data-desc="O segredo do longo prazo. Estabelecemos uma rotina simples de cuidados home-care e visitas periódicas para garantir que o resultado se mantenha por anos."
-                     class="bg-white/5 border border-white/10 p-8 rounded-sm hover:border-tricoGold/50 transition duration-300 group cursor-pointer hover:bg-white/10">
+                     class="flex flex-col items-center text-center bg-white/5 border border-white/10 p-8 rounded-sm hover:border-tricoGold/50 transition duration-300 group cursor-pointer hover:bg-white/10">
                     <div class="text-4xl text-tricoGold mb-4 group-hover:scale-110 transition"><i class="ph ph-infinity"></i></div>
                     <h4 class="text-xl font-serif mb-2">4. Fase Controle</h4>
                     <p class="text-xs text-tricoGold uppercase tracking-wide">Ver detalhes +</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-24 px-6 bg-white border-b border-stone-200">
-        <div class="max-w-5xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-tricoGold text-sm font-bold uppercase tracking-widest mb-3">Critérios de Elegibilidade</h2>
-                <h3 class="text-3xl font-serif text-tricoDark mb-4">A TricoMaster é para você?</h3>
-                <p class="text-stone-500 max-w-2xl mx-auto">Não somos uma clínica de volume. Somos um centro de excelência focado em quem busca o melhor.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-0 shadow-2xl rounded-sm overflow-hidden">
-                <div class="bg-stone-100 p-10 md:p-14 border-b md:border-b-0 md:border-r border-stone-200 flex flex-col items-center text-center">
-                    <div class="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mb-8 text-red-600"><i class="ph-bold ph-prohibit text-4xl"></i></div>
-                    <h4 class="text-xl font-serif font-bold text-stone-600 mb-8">Este método <span class="text-red-600 border-b-2 border-red-200">NÃO</span> é para quem:</h4>
-                    <ul class="space-y-5 w-full text-left max-w-xs mx-auto"><li class="flex items-center gap-3 text-stone-500 text-sm font-medium"><i class="ph-bold ph-x text-red-400 text-lg shrink-0"></i><span>Busca apenas o <strong>menor preço</strong>.</span></li><li class="flex items-center gap-3 text-stone-500 text-sm font-medium"><i class="ph-bold ph-x text-red-400 text-lg shrink-0"></i><span>Procura tratamentos <strong>não médicos</strong>.</span></li><li class="flex items-center gap-3 text-stone-500 text-sm font-medium"><i class="ph-bold ph-x text-red-400 text-lg shrink-0"></i><span>Deseja <strong>resultados irreais</strong> do Instagram.</span></li></ul>
-                </div>
-                <div class="bg-tricoDark p-10 md:p-14 relative overflow-hidden flex flex-col items-center text-center">
-                    <div class="absolute top-0 right-0 w-32 h-32 bg-tricoGold/10 rounded-full blur-2xl"></div>
-                    <div class="relative z-10 w-20 h-20 bg-white/10 rounded-full flex items-center justify-center mb-8 text-tricoGold border border-tricoGold/30"><i class="ph-fill ph-seal-check text-4xl"></i></div>
-                    <h4 class="relative z-10 text-xl font-serif font-bold text-white mb-8">Este método <span class="text-tricoGold border-b-2 border-tricoGold">É IDEAL</span> para quem:</h4>
-                    <ul class="relative z-10 space-y-5 w-full text-left max-w-xs mx-auto"><li class="flex items-center gap-3 text-stone-200 text-sm font-medium"><i class="ph-bold ph-check text-tricoGold text-lg shrink-0"></i><span>Valoriza a <strong>naturalidade extrema</strong>.</span></li><li class="flex items-center gap-3 text-stone-200 text-sm font-medium"><i class="ph-bold ph-check text-tricoGold text-lg shrink-0"></i><span>Exige <strong>segurança médica</strong> e hospitalar.</span></li><li class="flex items-center gap-3 text-stone-200 text-sm font-medium"><i class="ph-bold ph-check text-tricoGold text-lg shrink-0"></i><span>Busca <strong>atendimento exclusivo</strong> e humano.</span></li><li class="flex items-center gap-3 text-stone-200 text-sm font-medium"><i class="ph-bold ph-check text-tricoGold text-lg shrink-0"></i><span>Foca na preservação dos fios a <strong>longo prazo</strong>.</span></li></ul>
-                    <div class="mt-10 relative z-10 w-full max-w-xs"><a href="#agendamento" class="block w-full text-center bg-tricoGold text-tricoDark font-bold py-4 rounded-sm hover:bg-white transition duration-300 shadow-lg uppercase tracking-wider text-xs">Eu me enquadro neste perfil</a></div>
                 </div>
             </div>
         </div>
@@ -688,10 +674,12 @@ Com essa avaliação integrada, definimos um diagnóstico seguro e a estratégia
                 <img id="modal-img" src="" class="w-full h-full object-cover" alt="Detalhe do tratamento">
                 <button onclick="fecharModalTratamento()" class="absolute top-4 right-4 bg-white/20 hover:bg-white text-white hover:text-tricoDark rounded-full p-2 transition"><i class="ph-bold ph-x text-xl"></i></button>
             </div>
-            <div class="p-8">
+            
+            <div class="p-8 text-center">
                 <h3 id="modal-titulo" class="text-2xl font-serif text-tricoDark mb-4 font-bold">Título do Tratamento</h3>
                 <p id="modal-desc" class="text-stone-600 leading-relaxed">Descrição detalhada do tratamento aqui.</p>
-                <div class="mt-8 pt-6 border-t border-stone-100 flex justify-end">
+                
+                <div class="mt-8 pt-6 border-t border-stone-100 flex justify-center">
                     <button onclick="fecharModalTratamento()" class="text-sm font-bold text-tricoGold uppercase tracking-wider hover:text-tricoDark transition">Fechar</button>
                 </div>
             </div>
