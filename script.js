@@ -57,17 +57,21 @@ function carregarDadosBasicos() {
         }
     }
 
-    // Links
+    // Links (Instagram e Maps)
     if(siteConfig.instagram) {
         const linkInsta = document.getElementById('link-instagram');
         const txtInsta = document.getElementById('txt-instagram');
         if(linkInsta) linkInsta.href = `https://instagram.com/${siteConfig.instagram.replace('@','')}`;
         if(txtInsta) txtInsta.innerText = siteConfig.instagram;
     }
+
+    // ATUALIZAÇÃO DOS MAPAS AQUI:
     const u1 = document.getElementById('link-unidade1');
     const u2 = document.getElementById('link-unidade2');
-    if(u1) u1.href = "https://www.google.com/maps/search/?api=1&query=Rua+Tuiuti+1234+Tatuape";
-    if(u2) u2.href = "https://www.google.com/maps/search/?api=1&query=Av+Braz+Leme+567+Santana";
+    
+    // Agora ele pega o link correto que você colocou no dados.js
+    if(u1) u1.href = siteConfig.mapaUnidade1 || "https://maps.google.com";
+    if(u2) u2.href = siteConfig.mapaUnidade2 || "https://maps.google.com";
 }
 
 function gerarCarrosselEstrutura() {
@@ -78,7 +82,7 @@ function gerarCarrosselEstrutura() {
     
     // Legendas atualizadas na ordem das fotos
     const labels = [
-        "Consultório Lavanda Tatuapé",         // consultoriot1
+        "Consultório Lavanda Tatuapé",          // consultoriot1
         "Consultório Macadamia Tatuapé",       // consultoriot2
         "Recepção Tatuapé",                    // recepcaot1
         "Spa Capilar Geranio Tatuapé",         // spat1
@@ -282,3 +286,40 @@ if(inputTelefone) {
         e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
     });
 }
+// --- LÓGICA DO CARROSSEL DO HEADER (2 SLIDES) ---
+let currentSlide = 0;
+const totalSlides = 2; // Ajustado para 2 fotos
+
+function updateSlider() {
+    const container = document.getElementById('slider-container');
+    const dots = document.querySelectorAll('#hero-slider .rounded-full');
+    
+    if (container && dots.length > 0) {
+        // Desloca o container lateralmente
+        container.style.transform = `translateX(-${currentSlide * 100}%)`;
+        
+        // Atualiza a opacidade das bolinhas indicadoras
+        dots.forEach((dot, index) => {
+            if (index === currentSlide) {
+                dot.classList.add('bg-white/50');
+                dot.classList.remove('bg-white/20');
+            } else {
+                dot.classList.add('bg-white/20');
+                dot.classList.remove('bg-white/50');
+            }
+        });
+    }
+}
+
+function goToSlide(index) {
+    currentSlide = index;
+    updateSlider();
+}
+
+function autoPlaySlider() {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    updateSlider();
+}
+
+// Troca de slide a cada 8 segundos
+setInterval(autoPlaySlider, 5000);
